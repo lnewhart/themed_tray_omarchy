@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "themed-tray",
+  "name": "Themed Tray",
+  "version": "1.0.0",
+  "author": "luke",
+  "description": "Recolors every system tray icon to match the active Omarchy theme, including apps (like Steam) that ship a fixed-color icon instead of a proper freedesktop \"-symbolic\" one.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Tray.qml"
+  },
+  "barWidget": {
+    "displayName": "Themed Tray",
+    "description": "System tray with all icons theme-tinted, even non-symbolic ones",
+    "category": "Status",
+    "allowMultiple": false
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.tray"
+  }
+}
